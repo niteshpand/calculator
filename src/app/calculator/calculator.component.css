@@ -1,0 +1,75 @@
+body{
+    justify-content: center;
+}
+
+.cal-body {
+    font-size: 19px;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-left: 25%;
+  margin-right: 25%;
+  width:27vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.cal-head {
+    font-size: 19px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 25%;
+}
+
+.cal-initial {
+    font-size: 19px;
+  justify-items: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+input {
+  text-align: end;
+  font-size: 15px;
+  padding: 0.4em;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #ccc;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  font-size: 15px;
+  padding: 0.4em;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: rgb(53, 208, 200);
+}
+
+.cal-final {
+  justify-items: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.cal-time {
+  justify-items: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cal-result {
+  text-align: start;
+  color: #fff;
+  background-color: #a4a4a4;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 19px;
+  padding-left: 2%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  letter-spacing: 0.2px;
+}
