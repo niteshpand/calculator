@@ -1,0 +1,25 @@
+<body>
+        <div class="cal-body">
+                <div class="cal-head">
+                        <h3>CAGR Calculator</h3>
+                </div>
+                <form class="cal-struct">
+
+                        <div class="cal-initial">
+                                <p>Initial Value</p>
+                                <p>₹<input type="text" name="initial" (change)="updateInitial($event)"></p>
+                        </div>
+                        <div class="cal-final">
+                                <p>Final Value</p>
+                                <p>₹<input type="text" name="final"(change)="updateFinal($event)"></p>
+                        </div>
+                        <div class="cal-time">
+                                <p>Time Period</p>
+                                <p><input type="text" name="time" (change)="updateTime($event)">Years</p>
+                        </div>
+                        <div class="cal-result"(click)="calculator()">
+                                        <p>CAGR is <span style="font-size: 30px;">{{parsedNum}}% </span></p>
+                        </div>
+                </form> 
+        </div>
+</body>
