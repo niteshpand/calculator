@@ -3,23 +3,25 @@
                 <div class="cal-head">
                         <h3>CAGR Calculator</h3>
                 </div>
+                
                 <form class="cal-struct">
 
                         <div class="cal-initial">
                                 <p>Initial Value</p>
-                                <p>₹<input type="text" name="initial" (change)="updateInitial($event)"></p>
+                                <p>₹<input type="text" name="initial"[(ngModel)]="initial" (change)="updateInitial($event)"></p>
                         </div>
                         <div class="cal-final">
                                 <p>Final Value</p>
-                                <p>₹<input type="text" name="final"(change)="updateFinal($event)"></p>
+                                <p>₹<input type="text" name="final"[(ngModel)]="final" (change)="updateFinal($event)"></p>
                         </div>
                         <div class="cal-time">
                                 <p>Time Period</p>
-                                <p><input type="text" name="time" (change)="updateTime($event)">Years</p>
+                                <p><input type="text" name="time"[(ngModel)]="time" (change)="updateTime($event)">Years</p>
                         </div>
-                        <div class="cal-result"(click)="calculator()">
-                                        <p>CAGR is <span style="font-size: 30px;">{{parsedNum}}% </span></p>
+                        <div>{{ calculator() }}</div>
+                        <div class="cal-result">
+                                <p>CAGR is <span style="font-size: 30px;">{{parsedNum}}% </span></p>
                         </div>
-                </form> 
+                </form>
         </div>
 </body>
